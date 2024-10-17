@@ -19,6 +19,12 @@ import Orderlist from './Pages/Orderlist';
 import Searchitems from './Pages/Searchitems';
 import Layout from './Components/MainLayout';
 import { LoginLayout } from './Components/LoginLayout';
+// import Adminuser from './Admin/Adminuser';
+import AdminHome from './Admin/AdminHome';
+import AdminProduct from './Admin/AdminProduct';
+import Adminuser from './Admin/Adminuser';
+import Adminlayout from './Admin/Adminlayout';
+import ProtectedAdmin from './Admin/ProtectedAdmin';
 
 
 function App() {
@@ -41,6 +47,15 @@ function App() {
         <Route path='register' element={<Register />} />
         <Route path='login' element={<Login />} />
       </Route>
+      
+      <Route element={ <ProtectedAdmin ><Adminlayout /></ProtectedAdmin>}>
+        
+        <Route path='/admin' element={<AdminHome />} />
+        <Route path='/adminproduct' element={<AdminProduct />} />
+        <Route  path='/adminuser' element={<Adminuser />} />
+        
+      </Route>
+      
     </Routes>
 
     </div>

@@ -7,218 +7,66 @@
       "email": "shanu@gmail.com",
       "password": "Shanu@123",
       "cart": [],
-      "order": []
-    },
-    {
-      "id": "a463",
-      "name": "Hafeefa",
-      "username": "hafi",
-      "email": "hafee@gmail.com",
-      "password": "Hafi@123",
-      "cart": [],
       "order": [
         {
-          "name": "haneena p",
-          "address": "palpaaatee",
-          "items": [
-            {
-              "id": "2",
-              "name": "Men's Classic Blue",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg",
-              "price": 2999,
-              "quantity": 1,
-              "categories": "men"
-            },
-            {
-              "id": "3",
-              "name": "Men's Classic Mint",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-020.jpg",
-              "price": 3999,
-              "quantity": 1,
-              "categories": "men"
-            },
-            {
-              "id": "4",
-              "name": "Men's Red Running",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-006.jpg",
-              "price": 1999,
-              "quantity": 1,
-              "categories": "men"
-            },
-            {
-              "id": "1",
-              "name": "Men's Black Running",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-005.jpg",
-              "price": 2000,
-              "quantity": 1,
-              "categories": "men"
-            }
-          ],
-          "total": 10997
-        },
-        {
           "name": "Haneena P",
           "address": "palpaaatee",
           "items": [
             {
-              "id": "2",
-              "name": "Men's Classic Blue",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg",
-              "price": 2999,
-              "quantity": 1,
-              "categories": "men"
-            },
-            {
-              "id": "3",
-              "name": "Men's Classic Mint",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-020.jpg",
-              "price": 3999,
-              "quantity": 1,
-              "categories": "men"
-            },
-            {
-              "id": "4",
-              "name": "Men's Red Running",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-006.jpg",
-              "price": 1999,
-              "quantity": 1,
-              "categories": "men"
-            }
-          ],
-          "total": 8997
-        },
-        {
-          "name": "Haneena P",
-          "address": "palpaaatee",
-          "items": [
-            {
-              "id": "2",
-              "name": "Men's Classic Blue",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg",
-              "price": 2999,
-              "quantity": 1,
-              "categories": "men"
-            }
-          ],
-          "total": 2999
-        },
-        {
-          "name": "haneena p",
-          "address": "pppppp",
-          "items": [
-            {
-              "id": "2",
-              "name": "Men's Classic Blue",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg",
-              "price": 2999,
-              "quantity": 1,
-              "categories": "men"
-            },
-            {
-              "id": "3",
-              "name": "Men's Classic Mint",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-020.jpg",
-              "price": 3999,
-              "quantity": 1,
-              "categories": "men"
-            }
-          ],
-          "total": 6998
-        },
-        {
-          "name": "Haneena P",
-          "address": "palpaaatee",
-          "items": [
-            {
-              "id": "2",
-              "name": "Men's Classic Blue",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg",
-              "price": 2999,
-              "quantity": 1,
-              "categories": "men"
-            }
-          ],
-          "total": 2999
-        },
-        {
-          "name": "Haneena P",
-          "address": "palpaaatee",
-          "items": [
-            {
-              "id": "3",
-              "name": "Men's Classic Mint",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-020.jpg",
-              "price": 3999,
-              "quantity": 1,
-              "categories": "men"
-            },
-            {
-              "id": "10",
-              "name": "Shiny high heel",
-              "images": "/assets/women2.jpg",
+              "id": "12",
+              "name": "Shiny sports shoe",
               "price": 4499,
               "quantity": 1,
-              "categories": "women"
-            }
-          ],
-          "total": 8498
-        },
-        {
-          "name": "Haneena P",
-          "address": "palpaaatee",
-          "items": [
+              "categories": "women",
+              "images": "/assets/women4.jpg"
+            },
             {
-              "id": "2",
-              "name": "Men's Classic Blue",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg",
-              "price": 2999,
-              "quantity": 1,
-              "categories": "men"
+              "id": "13",
+              "name": "Shiny black leather shoe",
+              "price": 4599,
+              "quantity": 2,
+              "categories": "women",
+              "images": "/assets/women5.jpg"
             }
           ],
-          "total": 2999
-        },
-        {
-          "name": "Haneena P",
-          "address": "palpaaatee",
-          "items": [
-            {
-              "id": "2",
-              "name": "Men's Classic Blue",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg",
-              "price": 2999,
-              "quantity": 1,
-              "categories": "men"
-            }
-          ],
-          "total": 2999
+          "total": 13697
         }
-      ]
+      ],
+      "status": true
     },
     {
-      "id": "a0ee",
+      "id": "ae16",
       "name": "Haneena P",
-      "username": "Hani_p",
-      "email": "pphaneena02@gmail.com",
-      "password": "Haneena@321",
-      "cart": [],
-      "order": []
-    },
-    {
-      "id": "338e",
-      "name": "Haneena P",
-      "username": "Hani",
-      "email": "pphaneena2@gmail.com",
-      "password": "Han@1234",
-      "cart": [],
-      "order": []
-    },
-    {
-      "id": "0785",
-      "name": "Haneena P",
-      "username": "Hanipp",
+      "username": "HaniPP",
       "email": "pphaneena@gmail.com",
-      "password": "Haneena@1234",
+      "password": "Haneena@1",
+      "cart": [
+        {
+          "id": "3",
+          "name": "Men's Classic Mint",
+          "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-020.jpg",
+          "price": 3999,
+          "quantity": 1,
+          "categories": "men"
+        },
+        {
+          "id": "2",
+          "name": "Men's Classic Blue",
+          "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg",
+          "price": 2999,
+          "quantity": 2,
+          "categories": "men"
+        }
+      ],
+      "order": [],
+      "status": true
+    },
+    {
+      "id": "0b2a",
+      "name": "Hafeefa P",
+      "username": "Banu",
+      "email": "Hafi12@gmail.com",
+      "password": "Hafeefa@12",
       "cart": [],
       "order": [
         {
@@ -228,161 +76,154 @@
             {
               "id": "2",
               "name": "Men's Classic Blue",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg",
               "price": 2999,
               "quantity": 1,
-              "categories": "men"
-            },
-            {
-              "id": "3",
-              "name": "Men's Classic Mint",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-020.jpg",
-              "price": 3999,
-              "quantity": 1,
-              "categories": "men"
+              "categories": "men",
+              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg"
             }
           ],
-          "total": 6998
+          "total": 2999
         }
-      ]
+      ],
+      "status": true
     }
   ],
   "Products": [
     {
-      "id": "1",
-      "name": "Men's Black Running",
-      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-005.jpg",
-      "price": 2000,
-      "quantity": 1,
-      "categories": "men"
-    },
-    {
-      "id": "2",
-      "name": "Men's Classic Blue",
-      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg",
-      "price": 2999,
-      "quantity": 1,
-      "categories": "men"
-    },
-    {
-      "id": "3",
-      "name": "Men's Classic Mint",
-      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-020.jpg",
-      "price": 3999,
-      "quantity": 1,
-      "categories": "men"
-    },
-    {
-      "id": "4",
-      "name": "Men's Red Running",
-      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-006.jpg",
-      "price": 1999,
-      "quantity": 1,
-      "categories": "men"
-    },
-    {
-      "id": "5",
-      "name": "Men's Navy Running",
-      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-008.jpg",
-      "price": 2499,
-      "quantity": 1,
-      "categories": "men"
-    },
-    {
-      "id": "6",
-      "name": "Men's Green Running",
-      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-007.jpg",
-      "price": 3599,
-      "quantity": 1,
-      "categories": "men"
-    },
-    {
-      "id": "7",
-      "name": "Men's Moonstone Sneaker",
-      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-018.jpg",
-      "price": 4499,
-      "quantity": 1,
-      "categories": "men"
-    },
-    {
-      "id": "8",
-      "name": "Men's Earth-Tone Sneaker",
-      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-017.jpg",
-      "price": 4999,
-      "quantity": 1,
-      "categories": "men"
-    },
-    {
-      "id": "9",
-      "name": "Fashinable High Heel",
-      "images": "/assets/women1.jpg",
-      "price": 3999,
-      "quantity": 1,
-      "categories": "women"
-    },
-    {
-      "id": "10",
-      "name": "Shiny high heel",
-      "images": "/assets/women2.jpg",
-      "price": 4499,
-      "quantity": 1,
-      "categories": "women"
-    },
-    {
       "id": "11",
       "name": "Shiny Red heel",
-      "images": "/assets/women3.jpg",
-      "price": 2999,
-      "quantity": 1,
-      "categories": "women"
+      "price": 1999,
+      "quantity": 20,
+      "categories": "women",
+      "images": "/assets/women3.jpg"
     },
     {
       "id": "12",
       "name": "Shiny sports shoe",
-      "images": "/assets/women4.jpg",
-      "price": 4499,
-      "quantity": 1,
-      "categories": "women"
+      "price": 3499,
+      "quantity": 33,
+      "categories": "women",
+      "images": "/assets/women4.jpg"
     },
     {
       "id": "13",
       "name": "Shiny black leather shoe",
-      "images": "/assets/women5.jpg",
-      "price": 4599,
-      "quantity": 1,
-      "categories": "women"
+      "price": 1599,
+      "quantity": 22,
+      "categories": "women",
+      "images": "/assets/women5.jpg"
     },
     {
       "id": "14",
       "name": "Shiny Fashionable high heel",
-      "images": "/assets/women6.jpg",
       "price": 4999,
-      "quantity": 1,
-      "categories": "women"
+      "quantity": 11,
+      "categories": "women",
+      "images": "/assets/women6.jpg"
     },
     {
       "id": "15",
       "name": "Elegant Shiny Fashionable heel",
-      "images": "/assets/women7.jpg",
       "price": 3999,
-      "quantity": 1,
-      "categories": "women"
+      "quantity": 12,
+      "categories": "women",
+      "images": "/assets/women7.jpg"
     },
     {
       "id": "16",
       "name": "Black high heel",
-      "images": "/assets/women6.jpg",
       "price": 2999,
-      "quantity": 1,
-      "categories": "women"
+      "quantity": 12,
+      "categories": "women",
+      "images": "/assets/women6.jpg"
     },
     {
       "id": "17",
       "name": "Women's Cream Suede",
-      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-015.jpg",
       "price": 2699,
-      "quantity": 1,
-      "categories": "women"
+      "quantity": 14,
+      "categories": "women",
+      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-015.jpg"
+    },
+    {
+      "id": "1",
+      "name": "Men's Black Running",
+      "price": 2000,
+      "quantity": 14,
+      "categories": "men",
+      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-005.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Men's Classic Blue",
+      "price": 2999,
+      "quantity": 14,
+      "categories": "men",
+      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Men's Classic Mint",
+      "price": 3999,
+      "quantity": 12,
+      "categories": "men",
+      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-020.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Men's Red Running",
+      "price": 1999,
+      "quantity": 11,
+      "categories": "men",
+      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-006.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Men's Navy Running",
+      "price": 2499,
+      "quantity": 11,
+      "categories": "men",
+      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-008.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Men's Green Running",
+      "price": 1599,
+      "quantity": 15,
+      "categories": "men",
+      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-007.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Men's Moonstone Sneaker",
+      "price": 2499,
+      "quantity": 12,
+      "categories": "men",
+      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-018.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Men's Earth-Tone Sneaker",
+      "price": 2999,
+      "quantity": 14,
+      "categories": "men",
+      "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-017.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Fashinable High Heel",
+      "price": 2999,
+      "quantity": 13,
+      "categories": "women",
+      "images": "/assets/women1.jpg"
+    },
+    {
+      "id": "98a6",
+      "name": "Leather ballet pumps",
+      "price": 1500,
+      "quantity": 15,
+      "categories": "women",
+      "images": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F26%2Fcc%2F26ccd57b07bb57632ebb83eb93bf834bb3fa7f9a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_premium_selection_shoes%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
     }
   ]
 }

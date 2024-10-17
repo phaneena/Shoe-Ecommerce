@@ -18,7 +18,8 @@ function Register(){
         password:'',
         confirmpassword:'',
         cart:[],
-        order:[]
+        order:[],
+        status:true
     };
     const validationSchema =Yup.object({
         name:Yup.string()
@@ -50,6 +51,10 @@ function Register(){
             });
             if(existingUsername.data.length>0){
                 toast.success('Username already exists.You can login');
+                return;
+            }
+            if(values.email==='pphaneena02@gmail.com'){
+                toast.success('This email already existing.')
                 return;
             }
             const existingEmail= await axios.get('http://localhost:5000/users',{

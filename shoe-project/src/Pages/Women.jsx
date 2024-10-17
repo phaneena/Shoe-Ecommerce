@@ -37,14 +37,14 @@ function Women(){
                     }
                     <div className="text-center">
                     <h1 className="mt-2 text-lg font-semibold">{product.name}</h1>
-                    <p className="mt-1 text-gray-700">${product.price}</p>
+                    <p className="mt-1 text-gray-700"> ₹ {product.price}</p>
                     </div>
                     <button
                         className="w-full mt-3 bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600 transition duration-300"
                         onClick={() =>{
                             if(localStorage.getItem('id')){
                                 handleAddToCart(product)
-                                toast.success('Item added successfully')
+                                // toast.success('Item added successfully')
                             }
                             else{
                                 navigate('/login')

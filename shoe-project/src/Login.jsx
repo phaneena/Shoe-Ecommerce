@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast,ToastContainer } from 'react-toastify';
+import {productcontext} from './Context/Admincontext';
 
 function Login() {
   const navigate=useNavigate()
+  const {setLogged}=useContext(productcontext)
   const initialValues = {
     email: '',
     password: ''
@@ -20,19 +22,31 @@ function Login() {
 
   const onSubmit = async (values) => {
     try{
-      console.log('Form data', values);
-      const response=await axios.get('http://localhost:5000/users')
-      console.log(response);
-
-      const user = response.data.find((val) => val.email === values.email && val.password === values.password);
-
-      if(user){
-        const store=localStorage.setItem('id',user.id)
-        navigate('/')
+      if(values.email==='pphaneena02@gmail.com' && values.password==='Haneena@321P'){
+        setLogged(true)
+        navigate('/admin')
       }
+        // console.log('Form data', values);
       else{
-        toast.success('invalid email and password')
+        const response=await axios.get('http://localhost:5000/users')
+        console.log(response);
+
+        const user = response.data.find((val) => val.email === values.email && val.password === values.password);
+
+        if(user){
+          if(!user.status){
+            toast.error('You are blocked')
+            return;
+          }
+          localStorage.setItem('id',user.id)
+          localStorage.setItem('name',user.name)
+          navigate('/')
+        }
+        else{
+          toast.success('invalid email and password')
+        }
       }
+      
       
       // if(response.data.username===values.username &&  response.data.password===values.password){
       //   console.log('login successful')

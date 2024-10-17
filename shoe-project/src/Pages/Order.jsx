@@ -66,7 +66,6 @@ function Order(){
         // console.log("Order Data:", order);
     
         try {
-            // Fetch current user data
             const response = await axios.get(`http://localhost:5000/users/${id}`);
             const oldOrders = response.data.order || []; // Use an empty array if undefined
     
@@ -122,10 +121,10 @@ function Order(){
                 {cart.map((product)=>(
                     <div key={product.id} className="flex justify-between py-2 border-b text-sm md:text-base">
                         <p>{product.name}</p>
-                        <p>{product.price}</p>
+                        <p> ₹ {product.price}</p>
                     </div>
                 ))}
-                <p className="text-right font-semibold mt-2">Total : ${totalPrice}</p>
+                <p className="text-right font-semibold mt-2">Total :  ₹ {totalPrice}</p>
             </div>
 
             <div className="flex justify-center mt-6">

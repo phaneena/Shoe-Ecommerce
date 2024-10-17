@@ -156,6 +156,7 @@ const Orderlist = () => {
             ) : (
                 orders.map((order, index) => (
                     <div key={index} className="mb-4 border p-4 rounded-md shadow-md">
+                        <p className='text-lg font-semibold mb-2'>Order {index + 1}</p> 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                             {order.items.map((product) => (
                                 <div key={product.id} className="flex items-center border-b py-2">
@@ -166,7 +167,7 @@ const Orderlist = () => {
                                     />
                                     <div className="ml-4">
                                         <p className="font-semibold">{product.name}</p>
-                                        <p className="text-gray-600">${product.price.toFixed(2)}</p>
+                                        <p className="text-gray-600"> ₹ {product.price}</p>
                                     </div>
                                 </div>
                             ))}

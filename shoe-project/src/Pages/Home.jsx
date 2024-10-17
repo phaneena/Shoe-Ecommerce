@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { shoecontext } from "../Context/ShopContext";
 import Mainshooo from '/assets/mainshoe.jpg'
 import Shop from "./Shop";
+import Footer from "../Components/Footer";
 function Home() {
     const {handleAddToCart}=useContext(shoecontext)
 
@@ -14,7 +15,10 @@ function Home() {
                     className="w-full h-96 object-cover" 
                 />
         </div>
+        <h1 className="font-extrabold text-3xl text-center mt-2 mb-5 bg-black text-white p-4 rounded-lg shadow-lg">LATEST COLLECTIONS</h1>
+
         <Shop />
+        <Footer />
             
         </div>
     );

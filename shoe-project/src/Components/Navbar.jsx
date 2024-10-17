@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
-import { CiSearch } from "react-icons/ci";
+import { IoMdSearch } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { IoMdCart } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";
@@ -9,8 +9,9 @@ import { toast, ToastContainer } from 'react-toastify';
 
 function Navbar() {
     const navigate = useNavigate();
+    const [searchval,setSearchval]=useState('')
     const [visible, setVisible] = useState(false);
-    const { cartCount,setShowSearch } = useContext(shoecontext);
+    const {cartCount} = useContext(shoecontext);
 
     const handleLogout = () => {
         localStorage.removeItem('id');
@@ -41,6 +42,15 @@ function Navbar() {
     //     navigate(`/search?term=${encodeURIComponent(term.trim())}${categoryParam}`);
 
     // };
+
+
+    // const handleSearch=(e)=>{
+    //     const search=e.target.value.toLowerCase();
+    //     setSearchval(search)
+    //     if(search.length>0){
+    //         const filteredsearch=product.filter((product)=>product.name.toLowerCase().includes(search))
+    //     }
+    // }
     
 
     // const handleCategoryClick = (category) => {
@@ -49,8 +59,10 @@ function Navbar() {
     // };
 
     return (
-        <div className='flex items-center justify-between py-4 font-medium'>
-            <NavLink className="navbar-brand" to="/" onClick={() => setActiveCategory('')}>
+        <div className='w-full bg-gray-200'>
+        <div className='flex items-center justify-between py-4 font-medium max-w-screen-xl mx-auto'>
+
+            <NavLink className="navbar-brand" to="/">
                 <h1 className="text-xl lg:text-3xl">SHOE ZONE</h1>
             </NavLink>
             <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
@@ -68,20 +80,24 @@ function Navbar() {
                 </NavLink>
             </ul>
             <div className='flex items-center gap-6'>
-                <div className="relative sm:flex items-center">
-                    <span className="absolute right-2">
-                        <CiSearch onClick={()=>setShowSearch(true)} className='text-2xl cursor-pointer mb-0' />
-                    </span>
+                <div className="relative group hidden sm:block">
+                <input type="text" placeholder="Search" 
+                className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray px-2 py-1 focus:outline-none focus:border-1 focus:border-primary active:border-1 active:border-primary"/>
+                <IoMdSearch className="text-xl text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
+            </div>
+            <div className='group relative'>
+                <CgProfile className='text-3xl cursor-pointer'/>
+                <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
+                <div className='flex flex-col gap-2 w-30 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
+                {!localStorage.getItem('id') && (<Link to='/login'>
+                <button className='cursor-pointer hover:text-black'>Login</button></Link>)}
+                <button onClick={handleOrderList} className='cursor-pointer hover:text-black'>Orders</button>
+                {localStorage.getItem('id') && (
+                <button onClick={handleLogout} className='cursor-pointer hover:text-black'>Logout</button>)}
                 </div>
-                <div className='group relative'>
-                    <CgProfile className='text-3xl cursor-pointer'/>
-                    <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
-                        <div className='flex flex-col gap-2 w-30 py-3 px-5 bg-slate-100 text-gray-500 rounded '>
-                            <Link to='/login'><p className='cursor-pointer hover:text-black'>Login</p></Link>
-                            <button onClick={handleOrderList}><p className='cursor-pointer hover:text-black'>Orders</p></button>
-                            <button onClick={handleLogout}><p className='cursor-pointer hover:text-black'>Logout</p></button>
-                        </div>
-                    </div>
+            </div>
+            {localStorage.getItem('id') ? (<div className='text-sm'>{localStorage.getItem('name')}</div>):''}
+
                 </div>
                 <button onClick={handleCart} className="relative">
                     <IoMdCart className="text-3xl cursor-pointer" />
@@ -109,6 +125,7 @@ function Navbar() {
             </div>
             </div>
             <ToastContainer />
+        </div>
         </div>
     );
 }

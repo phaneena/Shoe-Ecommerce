@@ -3,10 +3,20 @@ import axios from "axios";
 import { shoecontext } from "../Context/ShopContext";
 import { useNavigate } from "react-router-dom";
 import { toast,ToastContainer } from 'react-toastify';
+
 function Shop() {
     const [productList, setProductList] = useState([]);
-    const {handleAddToCart,search,showSearch}=useContext(shoecontext)
+    // const [search,setSearch]=useState('')
+    const {handleAddToCart}=useContext(shoecontext);
     const navigate=useNavigate()
+    // const handleSearch=(e)=>{
+    //     setSearch(e.target.value)
+    // }
+    // const filteredItems=productList.filter((product)=>{
+    //     product.name.toLowerCase().includes(search.toLowerCase())
+    // })
+
+
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -22,14 +32,14 @@ function Shop() {
     }, []);
     
 
-    const applyFilter=()=>{
-        if(showSearch && search){
-            prouctcopy=productList.filter(item=>item.name.toLowerCase().includes(search.toLowerCase()))
-        }
-    }
-    useEffect(()=>{
-        applyFilter();
-    },[search,showSearch])
+    // const applyFilter=()=>{
+    //     if(showSearch && search){
+    //         prouctcopy=productList.filter(item=>item.name.toLowerCase().includes(search.toLowerCase()))
+    //     }
+    // }
+    // useEffect(()=>{
+    //     applyFilter();
+    // },[search,showSearch])
     // const  = (product) => {
     //     // This function could update a cart state or call an API
     //     console.log(`Added to cart: ${product.name}`);
@@ -38,9 +48,17 @@ function Shop() {
 
     return (
         <div>
-            <h1 className="font-bold text-3xl text-center" >LATEST COLLECTION</h1>
+            {/* <div className="w-full flex justify-center items-center">
+                <img 
+                    src='https://cdn.shopify.com/s/files/1/0026/6525/0851/files/LS_sneakercatbannerdesktop.png?v=1718020287'
+                    alt="Main Shoe"
+                    className="w-full h-96 object-cover" 
+                />
+            </div> */}
+            <h1 className="font-bold text-3xl text-center mt-10 mb-10" >Sneakers</h1>
             <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {productList.map((product) => (
+            {productList
+            .map((product) => (
                 <div key={product.id} className="border rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
                     {/* <div className="w-36 h-36 overflow-hidden mb-2"> Set to smaller size */}
                         <img
@@ -49,13 +67,13 @@ function Shop() {
                             className="w-full h-60 rounded-t object-cover" // Full width and height of the container
                         />
                     <h1 className="mt-2 text-lg font-semibold text-center">{product.name}</h1>
-                    <p className="mt-1 text-gray-700 text-center">${product.price}</p>
+                    <p className="mt-1 text-gray-700 text-center"> ₹ {product.price}</p>
                     <button
                         className="w-full mt-3 bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600 transition duration-300"
                         onClick={() =>{
                             if(localStorage.getItem('id')){
                                 handleAddToCart(product)
-                                toast.success('Item added successfully')
+                                // toast.success('Item added successfully')
                             }
                             else{
                                 toast.success('Must be logged in')
