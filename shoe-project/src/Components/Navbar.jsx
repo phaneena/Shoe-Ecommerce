@@ -43,13 +43,15 @@ function Navbar() {
 
     // };
 
-
+    const handleSearch = (e) => {
+        const query = e.target.value;
+          if (query.trim()){
+            navigate(`/search?term=${encodeURIComponent(query.trim())}`);
+          }
+      };
     // const handleSearch=(e)=>{
     //     const search=e.target.value.toLowerCase();
     //     setSearchval(search)
-    //     if(search.length>0){
-    //         const filteredsearch=product.filter((product)=>product.name.toLowerCase().includes(search))
-    //     }
     // }
     
 
@@ -81,7 +83,8 @@ function Navbar() {
             </ul>
             <div className='flex items-center gap-6'>
                 <div className="relative group hidden sm:block">
-                <input type="text" placeholder="Search" 
+                <input type="text" placeholder="Search"
+                onChange={handleSearch} 
                 className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray px-2 py-1 focus:outline-none focus:border-1 focus:border-primary active:border-1 active:border-primary"/>
                 <IoMdSearch className="text-xl text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
             </div>

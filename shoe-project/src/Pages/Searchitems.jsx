@@ -32,19 +32,19 @@ function SearchResults({ activeCategory }) {
       const results = items.filter((item) => {
         const matchesSearchTerm =
           item.name.toLowerCase().includes(term.toLowerCase()) ||
-          item.categories.toLowerCase().includes(term.toLowerCase());
+          item.categories.toLowerCase().startsWith(term.toLowerCase());
         const matchesCategory = activeCategory ? item.categories.toLowerCase() === activeCategory.toLowerCase() : true; // Check category if set
         return matchesSearchTerm && matchesCategory; // Return true if both conditions are satisfied
       });
       setFilteredItems(results);
     } else {
-      // If there's no search term, you can decide to show all items of the active category
+
       const results = items.filter((item) => {
         return activeCategory ? item.categories.toLowerCase() === activeCategory.toLowerCase() : true;
       });
       setFilteredItems(results);
     }
-  }, [term, items, activeCategory]); // Run this effect when term, items, or activeCategory change
+  }, [term, items, activeCategory]); 
   
 
   return (
@@ -68,7 +68,7 @@ function SearchResults({ activeCategory }) {
                                 toast.success('Must be logged in')
                                 navigate('/login')
                             }
-                        }} // Call the add to cart function
+                        }}
                     >
                         Add to Cart
                     </button>

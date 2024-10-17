@@ -59,7 +59,7 @@
         }
       ],
       "order": [],
-      "status": true
+      "status": false
     },
     {
       "id": "0b2a",
@@ -68,23 +68,7 @@
       "email": "Hafi12@gmail.com",
       "password": "Hafeefa@12",
       "cart": [],
-      "order": [
-        {
-          "name": "Haneena P",
-          "address": "palpaaatee",
-          "items": [
-            {
-              "id": "2",
-              "name": "Men's Classic Blue",
-              "price": 2999,
-              "quantity": 1,
-              "categories": "men",
-              "images": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019.jpg"
-            }
-          ],
-          "total": 2999
-        }
-      ],
+      "order": [],
       "status": true
     }
   ],
@@ -112,14 +96,6 @@
       "quantity": 22,
       "categories": "women",
       "images": "/assets/women5.jpg"
-    },
-    {
-      "id": "14",
-      "name": "Shiny Fashionable high heel",
-      "price": 4999,
-      "quantity": 11,
-      "categories": "women",
-      "images": "/assets/women6.jpg"
     },
     {
       "id": "15",
